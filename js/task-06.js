@@ -29,27 +29,23 @@
 // 4. Написать функцю которая 
 
 const inputRef = document.querySelector("#validation-input");
-// console.log(inputRef.value.length);
 const maxLength = Number(inputRef.dataset.length);
 console.log(maxLength);
 
 
-// inputRef.addEventListener("focus", inputRefOnFocus);
+
 inputRef.addEventListener("blur", inputRefOnBlur);
-// inputRef.addEventListener("input", inputRefTextOn)
+
 
 function inputRefOnBlur (event) {
     console.log(event.target.value.length);
-    // let inputLength = inputRef.value.length;
-    // if (inputLength === event.target.value.length) {
-        // if (Number(inputRef.dataset.length) === inputRef.addEventListener("input", (event) => {
-        //     event.target.value.length;
-        // })) {
-        // inputRef.classList.add("valid");
+   
         if (maxLength === event.target.value.length) {
       inputRef.classList.add("valid");
+      inputRef.classList.remove("invalid");
     } else {
       inputRef.classList.add("invalid");
+      inputRef.classList.remove("valid");
     } 
 };
       
