@@ -30,7 +30,8 @@
 
 const inputRef = document.querySelector("#validation-input");
 // console.log(inputRef.value.length);
-console.log(Number(inputRef.dataset.length));
+const maxLength = Number(inputRef.dataset.length);
+console.log(maxLength);
 
 
 // inputRef.addEventListener("focus", inputRefOnFocus);
@@ -45,11 +46,11 @@ function inputRefOnBlur (event) {
         //     event.target.value.length;
         // })) {
         // inputRef.classList.add("valid");
-        if (Number(inputRef.dataset.length) === event.target.value.length) {
-            inputRef.classList.add("valid");
+        if (maxLength === event.target.value.length) {
+      inputRef.classList.add("valid");
     } else {
-        inputRef.classList.add("invalid");
-    }
+      inputRef.classList.add("invalid");
+    } 
 };
       
 
