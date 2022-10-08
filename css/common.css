@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+input {
+  padding: 8px;
+  font: inherit;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+/* task-03 */
+.gallery{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.js-picture {
+  display: block;
+  max-width: 250px;
+  min-height: 170px;
+  background-size: cover;
+  
+}
+/* task-06 */
+#validation-input {
+    border: 3px solid #bdbdbd;
+   }
+  
+   #validation-input.valid {
+    border-color: #4caf50;
+  }
+  
+  #validation-input.invalid {
+    border-color: #f44336;
+   }
