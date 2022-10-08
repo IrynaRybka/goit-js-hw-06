@@ -15,17 +15,12 @@
 </body> */
 const inputFonRef = document.querySelector("#font-size-control");
 const spanTextRef = document.querySelector("#text");
-console.log(inputFonRef);
+console.log(inputFonRef.value);
 console.log(spanTextRef);
 
 inputFonRef.addEventListener("input", onChangeFontSize);
 
-function onChangeFontSize(event) {
-    console.log(event.target.value);
-    
-    if() {
+function onChangeFontSize() {
+    spanTextRef.style.fontSize = inputFonRef.value + "px";  
+};
 
-    }
-    
-    
-}
