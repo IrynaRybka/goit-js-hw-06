@@ -20,6 +20,40 @@
 // }
 
 // Создай функцию destroyBoxes(), которая очищает содержимое div#boxes, тем самым удаляя все созданные элементы.
+const inputRef = document.querySelector("input");
+const btnCreate = document.querySelector("button[data-create]");
+const btnDestroy = document.querySelector("button[data-destroy]");
+const divBoxes = document.querySelector("#boxes");
+console.log(btnCreate);
+console.log(btnDestroy);
+console.log(inputRef);
+
+btnCreate.addEventListener("click", createElement);
+btnDestroy.addEventListener("click", destroyElement)
+inputRef.addEventListener("input", textInput);
+const rangeNumber = [];
+
+function textInput(event) {
+event.currentTarget.value;
+}
+
+function createElement() {
+
+}
+
+function destroyElement() {
+  btnCreate.remove;
+}
+
+function createBoxes(amount){
+  const newDiv = document.createElement("div");
+if(amount > 0) {
+  divBoxes.append(newDiv*amount);
+}
+}
+function sizeDivBoxez(boxes) {
+ 
+}
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
