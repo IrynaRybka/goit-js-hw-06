@@ -31,35 +31,51 @@ const ingredients = [
   'Condiments',
 ];
 
-const liPotatoes = document.createElement("li");
-console.log(liPotatoes);
-liPotatoes.textContent = ingredients[0];
-liPotatoes.classList.add("item");
-
-const liMushroom = document.createElement("li");
-console.log(liMushroom);
-liMushroom.textContent = ingredients[1];
-liMushroom.classList.add("item");
-
-const liGarlic = document.createElement("li");
-console.log(liGarlic);
-liGarlic.textContent = ingredients[2];
-liGarlic.classList.add("item");
-
-const liTomato = document.createElement("li");
-console.log(liTomato);
-liTomato.textContent = ingredients[3];
-liTomato.classList.add("item");
-
-const liHerbs = document.createElement("li");
-console.log(liHerbs);
-liHerbs.textContent = ingredients[4];
-liHerbs.classList.add("item");
-
-const liCondiments = document.createElement("li");
-console.log(liCondiments);
-liCondiments.textContent = ingredients[5];
-liCondiments.classList.add("item");
-
 const ulRef = document.querySelector("#ingredients");
-ulRef.prepend(liPotatoes, liMushroom, liGarlic, liTomato, liHerbs, liCondiments);
+
+
+const createLiElement = ingredients.map(ingredient => {
+    const elem = document.createElement('li');
+    elem.textContent = ingredient;
+    elem.classList.add("item");
+    return elem;
+  });
+  ulRef.prepend(...createLiElement);
+
+    
+
+
+
+
+// const liPotatoes = document.createElement("li");
+// console.log(liPotatoes);
+// liPotatoes.textContent = ingredients[0];
+// liPotatoes.classList.add("item");
+
+// const liMushroom = document.createElement("li");
+// console.log(liMushroom);
+// liMushroom.textContent = ingredients[1];
+// liMushroom.classList.add("item");
+
+// const liGarlic = document.createElement("li");
+// console.log(liGarlic);
+// liGarlic.textContent = ingredients[2];
+// liGarlic.classList.add("item");
+
+// const liTomato = document.createElement("li");
+// console.log(liTomato);
+// liTomato.textContent = ingredients[3];
+// liTomato.classList.add("item");
+
+// const liHerbs = document.createElement("li");
+// console.log(liHerbs);
+// liHerbs.textContent = ingredients[4];
+// liHerbs.classList.add("item");
+
+// const liCondiments = document.createElement("li");
+// console.log(liCondiments);
+// liCondiments.textContent = ingredients[5];
+// liCondiments.classList.add("item");
+
+// const ulRef = document.querySelector("#ingredients");
+// ulRef.prepend(liPotatoes, liMushroom, liGarlic, liTomato, liHerbs, liCondiments);

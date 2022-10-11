@@ -19,39 +19,52 @@
 
 const itemRef = document.querySelectorAll(".item");
 console.log(`Number of categories: ${itemRef.length}`);
+console.log(itemRef);
+
+const h2Ref = document.querySelectorAll("li > h2");
+const ulInLIRef = document.querySelectorAll(".item ul")
+console.log(ulInLIRef);
+
+h2Ref.forEach((elem) => {
+      console.log(`Category: ${elem.textContent}`);
+});
+
+ulInLIRef.forEach((elem) => {
+      console.log(`Elements: ${elem.children.length}`);
+});
 
 
 
-const h2AnimalsRef = document.querySelectorAll("h2")[0];
-console.log(`Category: ${h2AnimalsRef.textContent}`);
+// const h2AnimalsRef = document.querySelectorAll("h2")[0];
+// console.log(`Category: ${h2AnimalsRef.textContent}`);
 
-const ulAnimalsRef = document.querySelectorAll(".item ul")[0];
-// console.log(ulAnimalsRef);
+// const ulAnimalsRef = document.querySelectorAll(".item ul")[0];
+// // console.log(ulAnimalsRef);
 
-const liAnimalsRef = ulAnimalsRef.querySelectorAll("li");
-console.log(`Elements: ${liAnimalsRef.length}`);
-
-
-
-const h2ProductsRef = document.querySelectorAll("h2")[1];
-console.log(`Category: ${h2ProductsRef.textContent}`);
-
-const ulProductsRef = document.querySelectorAll(".item ul")[1];
-// console.log(ulProductsRef);
-
-const liProductsRef = ulProductsRef.querySelectorAll("li");
-console.log(`Elements: ${liProductsRef.length}`);
+// const liAnimalsRef = ulAnimalsRef.querySelectorAll("li");
+// console.log(`Elements: ${liAnimalsRef.length}`);
 
 
 
-const h2TechnologiesRef = document.querySelectorAll("h2")[2];
-console.log(`Category: ${h2TechnologiesRef.textContent}`);
+// const h2ProductsRef = document.querySelectorAll("h2")[1];
+// console.log(`Category: ${h2ProductsRef.textContent}`);
 
-const ulTechnologiesRef = document.querySelectorAll(".item ul")[2];
-// console.log(ulTechnologiesRef);
+// const ulProductsRef = document.querySelectorAll(".item ul")[1];
+// // console.log(ulProductsRef);
 
-const liTechnologiesRef = ulTechnologiesRef.querySelectorAll("li");
-console.log(`Elements: ${liTechnologiesRef.length}`);
+// const liProductsRef = ulProductsRef.querySelectorAll("li");
+// console.log(`Elements: ${liProductsRef.length}`);
+
+
+
+// const h2TechnologiesRef = document.querySelectorAll("h2")[2];
+// console.log(`Category: ${h2TechnologiesRef.textContent}`);
+
+// const ulTechnologiesRef = document.querySelectorAll(".item ul")[2];
+// // console.log(ulTechnologiesRef);
+
+// const liTechnologiesRef = ulTechnologiesRef.querySelectorAll("li");
+// console.log(`Elements: ${liTechnologiesRef.length}`);
 
 
 
